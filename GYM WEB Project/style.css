@@ -1,0 +1,222 @@
+#header{
+    background-color: black;
+}
+
+#menu{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyLyoDWwWidH72mZ2LeqbGRHwtYrerb5acC_7wNGhzZjdmr8LZ');
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+ul{
+    margin: 0;
+}
+
+#menu li{
+    display: inline-block;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 10px;
+}
+
+#menu li:hover{
+    text-decoration-color:rgb(250, 131, 131);
+    text-decoration-thickness: 2px;
+}
+
+#menu li a:hover{
+    color: rgb(250, 131, 131);
+}
+
+#banner{
+    background-image: url('https://manofmany.com/wp-content/uploads/2023/09/10-Best-Core-Exercises-and-Workouts-for-Men-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+
+.ser-content-boxes img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.ser-content-boxes h3{
+    padding: 5px 15px;
+
+}
+
+#footer-icons{
+    display: flex;
+    list-style: none;
+}
+
+.paragraph{
+    transition: all ease-in 0.5s;
+}
+
+.paragraph:hover{
+    transform:translateY(8px);
+    background-color: rgba(0, 0, 0, 0.815);
+    color: aliceblue;
+}
+
+.testimonial-content img{
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+#Traainee-section{
+    /* background-image: url('../Bootstrap_website/images/08.jpg'); */
+    background-color: rgba(0, 0, 0, 0.815);
+    background-size: cover;
+}
+
+.about-news img{
+    height: 150px;
+    width: 200px;
+}
+
+.news-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-items li a{
+    text-decoration: none;
+    color: rgb(180, 173, 173);
+}
+
+.icons a img{
+    border-radius: 50px;
+}
+
+.icons{
+    margin: 2px;
+}
+
+.boxes img{
+    border: 2px solid rgba(0, 0, 0, 0.815);
+    padding: 4px;
+}
+
+#footer-section{
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+/* CSS Animation */
+@keyframes moveUpDown1 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-15px); /* Move up */
+    }
+    75% {
+        transform: translateY(-10px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Move down */
+    }
+}
+
+@keyframes moveUpDown2 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-15px); /* Move up */
+    }
+    75% {
+        transform: translateY(-10px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Move down */
+    }
+}
+
+@keyframes moveUpDown3 {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-20px); /* Move up */
+    }
+    60% {
+        transform: translateY(-15px); /* Move up */
+    }
+    90% {
+        transform: translateY(-10px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Move down */
+    }
+}
+
+/* Apply animation to specific paragraphs */
+.paragraph1 {
+    animation: moveUpDown1 4s ease-in-out infinite alternate;
+}
+
+.paragraph2 {
+    animation: moveUpDown2 3s ease-in-out infinite alternate;
+}
+
+.paragraph3 {
+    animation: moveUpDown3 5s ease-in-out infinite alternate;
+}
+
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+@media (max-width: 768px) {
+    .logo{
+        display: block;
+        margin: auto;
+    }
+    #menu{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .ser-content-boxes{
+        align-items: center;
+    }
+    .ser-content-boxes .paragraph{
+        width: 400px;
+    }
+    #boxes{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 420px){
+    .ser-content-boxes .paragraph{
+        width: auto;
+    }
+}
+
